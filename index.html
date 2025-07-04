@@ -1,158 +1,189 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" media="screen" href="style.css">
-    <script src="https://kit.fontawesome.com/baf8e29c9b.js" crossorigin="anonymous"></script>
-    <title>Rafael Angelo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Currículo Rafael Angelo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+            /* Aumentei de 16px para 32px */
+        }
+
+        @media(min-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 16px;
+            background: #fefefe;
+            box-shadow: 0 2px 5px rgb(0 0 0 / 0.05);
+            margin-bottom: 24px;
+            /* espaçamento extra vertical */
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .text-sm {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 0;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+        }
+
+        .space-y-1>*+* {
+            margin-top: 4px;
+        }
+
+        .space-y-2>*+* {
+            margin-top: 8px;
+        }
+
+        .space-y-3>*+* {
+            margin-top: 12px;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+        }
+
+        .gap-2 {
+            gap: 8px;
+        }
+
+        .gap-4 {
+            gap: 16px;
+        }
+    </style>
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="information-column">
-            <img src="images/profile.jpeg" alt="Foto de perfil de Rafael Angelo">
-            <h1>Rafael Angelo</h1>
-            <h2>Analista</h2>
-            <div class="line-botton"></div>
+    <div class="grid gap-4 p-6">
 
-            <div class="contact-descripton">
-                <h3>Contato</h3>
-                <ul>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i><a href="mailto:rafael@dc.seg.br">rafael@dc.seg.br</a>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-github"></i><a href="https://www.githhub.com"
-                            target="_blank">www.github.com</a>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-linkedin"></i><a href="https://linkedin.com.br/angelorafaelti"
-                            target="_blank">linkedin</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-globe"></i><a href="https://dc.seg.br">Rio de Janeiro - RJ</a>
-                    </li>
-                </ul>
+        <!-- Sidebar -->
+        <div class="space-y-4">
 
-            </div>
-            <div class="education-descripton">
-                <h3>Educação</h3>
-                <ul>
-                    <li>
-                        <p>2020 - 2023</p>
-                        <h4>Sistemas para internet</h4>
-                        <h5>Unicesumar</h5>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <p>2018 - 2020</p>
-                        <h4>Desenvolvimento Python</h4>
-                        <h5>Udemy</h5>
-                    </li>
-                </ul>
-                <div class="language-description">
-                    <h3>Línguas</h3>
-                    <ul>
-                        <li>
-                            <p>Português</p>
-                            <div class="percent"></div>
-                            <div></div>
-                        </li>
-                        <li>
-                            <p>Inglês</p>
-                            <div class="percent english"></div>
-                            <div></div>
-                        </li>
-                    </ul>
+            <div class="card">
+                <h1>Rafael Angelo da Silva</h1>
+                <div class="text-sm" style="display: flex; flex-direction: column; gap: 6px;">
+                    <p>📍 Rio de Janeiro, RJ</p>
+                    <p>📞 (21) 97602-3088</p>
+                    <p>✉️ angelorfl07@gmail.com</p>
+                    <a href="https://www.linkedin.com/in/rafaelrfl/">
+                        <p>🔗 www.linkedin.com/in/rafaelrfl/</p>
+                    </a>
                 </div>
             </div>
+
+            <div class="card">
+                <h2>Competências Técnicas</h2>
+                <ul class="space-y-1 text-sm">
+                    <li>PHP, HTML, CSS, JavaScript, WordPress</li>
+                    <li>Python, Node.js, automações</li>
+                    <li>Linux, Windows Server, Infraestrutura</li>
+                    <li>Firewall: pfSense, UFW, CSF</li>
+                    <li>Apache2, Nginx, cPanel, CWP</li>
+                    <li>MySQL, MariaDB</li>
+                    <li>Telefonia IP: FreePBX, Issabel</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Competências Comportamentais</h2>
+                <ul class="space-y-1 text-sm">
+                    <li>Proatividade e resolução de problemas</li>
+                    <li>Organização e automação de processos</li>
+                    <li>Trabalho em equipe multidisciplinar</li>
+                </ul>
+            </div>
+
         </div>
 
-        <div class="experiences-column">
-            <section>
-                <h2>Sobre</h2>
+        <!-- Main Content -->
+        <div class="space-y-4">
 
-                <p>Enim minim laborum officia anim mollit laborum laboris. Magna deserunt quis deserunt proident ex
-                    sit
-                    nisi veniam dolor ea amet. Eu dolore ad reprehenderit velit excepteur nostrud aliqua aute do
-                    labore
-                    adipisicing sint. Deserunt ad ullamco tempor eiusmod nisi aliquip exercitation consequat ut
-                    incididunt est officia voluptate. Anim reprehenderit esse quis minim deserunt occaecat tempor
-                    cillum
-                    ad aliqua. Non ex do aute proident quis. Consectetur duis eiusmod est cupidatat dolore labore
-                    adipisicing in nulla in.</p>
-            </section>
-
-            <section>
-                <h2>Experiências</h2>
-                <div class="experience">
-                    <div class="experience-date">
-                        <p>00/0000 - 00/0000</p>
-                        <p>(x ano)</p>
+            <div class="card">
+                <h2>💼 Experiência Profissional</h2>
+                <div class="text-sm space-y-3">
+                    <div>
+                        <strong>Sonda Procwork LTDA</strong> – Analista de Suporte (Out/2022 – Jan/2024)<br />
+                        • Suporte técnico noturno em ambiente hospitalar
                     </div>
                     <div>
-                        <h3>Empresa</h3>
-                        <h4>Desenvolvedor de Software Front-end</h4>
-                        <p>Enim minim laborum officia anim mollit laborum laboris. Magna deserunt quis deserunt proident
-                            ex
-                            sit
-                            nisi veniam dolor ea amet. Eu dolore ad reprehenderit velit excepteur nostrud aliqua aute do
-                            labore
-                            adipisicing sint. Deserunt ad ullamco tempor eiusmod nisi aliquip exercitation consequat ut
-                            incididunt est officia voluptate. Anim reprehenderit esse quis minim deserunt occaecat
-                            tempor
-                            cillum
-                            ad aliqua. Non ex do aute proident quis. Consectetur duis eiusmod est cupidatat dolore
-                            labore
-                            adipisicing in nulla in.</p>
-                    </div>
-                </div>
-                <div class="experience">
-                    <div class="experience-date">
-                        <p>00/0000 - 00/0000</p>
-                        <p>(x ano)</p>
+                        <strong>SS Service e Software</strong> – Analista de Suporte (Dez/2021 – Out/2022)<br />
+                        • Atendimento técnico e solução de problemas hospitalares
                     </div>
                     <div>
-                        <h3>Empresa</h3>
-                        <h4>Desenvolvedor de Software Front-end</h4>
-                        <p>Enim minim laborum officia anim mollit laborum laboris. Magna deserunt quis deserunt proident
-                            ex
-                            sit
-                            nisi veniam dolor ea amet. Eu dolore ad reprehenderit velit excepteur nostrud aliqua aute do
-                            labore
-                            adipisicing sint. Deserunt ad ullamco tempor eiusmod nisi aliquip exercitation consequat ut
-                            incididunt est officia voluptate. Anim reprehenderit esse quis minim deserunt occaecat
-                            tempor
-                            cillum
-                            ad aliqua. Non ex do aute proident quis. Consectetur duis eiusmod est cupidatat dolore
-                            labore
-                            adipisicing in nulla in.</p>
+                        <strong>Host Dual</strong> – Analista de Suporte (Fev/2018 – Dez/2020)<br />
+                        • Infraestrutura em nuvem, desenvolvimento WordPress, suporte técnico remoto
+                    </div>
+                    <div>
+                        <strong>Active Serviços</strong> – Analista Sênior (Set/2013 – Out/2017)<br />
+                        • Administração de redes e servidores, suporte interno
+                    </div>
+                    <div>
+                        <strong>Rede Marcela</strong> – Analista de Suporte (Nov/2010 – Mar/2012)<br />
+                        • Administração de servidores e estações de trabalho
                     </div>
                 </div>
-            </section>
-            <section class="projects">
-                <h2>Projetos</h2>
-                <div>
-                    <h3>My Links</h3>
-                    <p>Site para centralizar os links mais importantes em um só lugar.
-                        Desenvolvido em HTML e CSS no Curso StepOne. Confira o resultado <a
-                            href="https://github.com/angelorfl/StepOne.git">aqui</a> e o código fonte <a
-                            href="https://github.com/angelorfl/StepOne.git">aqui</a></p>
+            </div>
+
+            <div class="card">
+                <h2>🎓 Formação Acadêmica</h2>
+                <div class="text-sm space-y-2">
+                    <p>Curso Superior em Desenvolvimento FullStack – Estácio (Conclusão: 2027)</p>
+                    <p>Ensino Médio Completo – Centro de Formação Aplicação e Cultura</p>
+                    <p>Python (Gustavo Guanabara – 2023), WordPress, Ruby on Rails, Asterisk, Web Design</p>
                 </div>
-                <div>
-                    <h3>My CV</h3>
-                    <p>Site com o currículo online. Desenvolvido com HTML e CSS no curso StepOne.
-                        Confira o código fonte <a href="https://github.com/angelorfl/StepOne.git">aqui</a>.</p>
-                </div>
-            </section>
-            <p class="last-date">Última atualização: 01/03/2023</p>
+            </div>
+
+            <div class="card">
+                <h2>💻 Objetivo</h2>
+                <p class="text-sm">
+                    Atuar como Analista de Suporte Técnico ou Desenvolvedor Web, contribuindo com minha experiência em
+                    infraestrutura, automação e criação de soluções digitais eficazes.
+                </p>
+            </div>
+
         </div>
-
     </div>
-
 </body>
 
 </html>
